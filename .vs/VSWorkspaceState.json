@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\examples",
+    "\\examples\\CollidingGalaxiesSFR",
+    "\\examples\\G2-cluster",
+    "\\examples\\G2-galaxy",
+    "\\examples\\SantaBarbara-PSPH-64",
     "\\src",
-    "\\src\\main"
+    "\\src\\data"
   ],
+  "SelectedNode": "\\src\\data\\allvars.cc",
   "PreviewInSolutionExplorer": false
 }

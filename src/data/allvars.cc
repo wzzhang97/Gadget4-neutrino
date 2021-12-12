@@ -199,6 +199,23 @@ void global_data_all_processes::register_parameters(void)
   add_param("A_StaticHQHalo", &A_StaticHQHalo, PARAM_DOUBLE, PARAM_FIXED);
   add_param("Mass_StaticHQHalo", &Mass_StaticHQHalo, PARAM_DOUBLE, PARAM_FIXED);
 #endif
+
+/*! \brief Here is the added parameter for active/sterile neutrino*/
+#ifdef NEUTRINO 
+  add_param("T_Neutrino_0", &T_Neutrino_0, PARAM_DOUBLE, PARAM_FIXED);
+  add_param("NeutrinoScheme", &NeutrinoScheme, PARAM_DOUBLE, PARAM_FIXED);
+  add_param("FrstrInterval", &FrstrInterval, PARAM_INT, PARAM_FIXED);
+  add_param("Xi_3", &Xi_3, PARAM_DOUBLE, PARAM_FIXED);
+  add_param("Mass_1", &Mass_1, PARAM_DOUBLE, PARAM_FIXED);
+  add_param("TimeOfStep", &TimeOfStep, PARAM_INT, PARAM_FIXED);
+  add_param("PhiParam", &PhiParam, PARAM_INT, PARAM_FIXED);
+  add_param("DeductionFromE", &DedunctionFormE, PARAM_INT, PARAM_FIXED);
+  add_param("ExpanOn", &ExpanOn, PARAM_INT, PARAM_FIXED);
+  add_param("MassHierarchy", &MassHierarchy, PARAM_INT, PARAM_FIXED);
+  add_param("LeptonAsymmetry", &LeptonAsymmetry, PARAM_INT, PARAM_FIXED);
+  add_param("Ratio_Nu_CDM_Txt", &Ratio_Nu_CDM_Txt, PARAM_STRING, PARAM_CHANGEABLE);
+  add_param("Nu_Pk_Txt", &Nu_Pk_Txt, PARAM_STRING, PARAM_CHANGEABLE);
+#endif
 }
 
 /*! \brief This function reads a table with a list of desired output times.

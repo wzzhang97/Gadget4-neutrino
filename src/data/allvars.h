@@ -352,6 +352,23 @@ struct global_data_all_processes : public parameters
   double Mass_StaticHQHalo;
 #endif
 
+#ifdef NEUTRINO /* The Neutrino part*/
+  int TimeOfStep;
+  int PhiParam;
+  int DedunctionFormE;
+  int ExpanOn;
+  int MassHierarchy;
+  int LeptonAsymmetry;
+  double T_Neutrino_0;
+  double NeutrinoScheme;
+  double FrstrInterval;
+  double Xi_3;
+  double Mass_1;
+  char Ratio_Nu_CDM_Txt[MAXLEN_PATH];
+  char Nu_Pk_Txt[MAXLEN_PATH];
+#endif
+
+
   void set_cosmo_factors_for_current_time(void);
   void register_parameters(void);
   void read_outputlist(char *fname);
