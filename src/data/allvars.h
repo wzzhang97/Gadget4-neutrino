@@ -353,9 +353,10 @@ struct global_data_all_processes : public parameters
 #endif
 
 #ifdef NEUTRINO /* The Neutrino part*/
+  /*parameters in the parameterfile*/
   int TimeOfStep;
   int PhiParam;
-  int DedunctionFormE;
+  int DedunctionFormDE;
   int ExpanOn;
   int MassHierarchy;
   int LeptonAsymmetry;
@@ -366,6 +367,30 @@ struct global_data_all_processes : public parameters
   double Mass_1;
   char Ratio_Nu_CDM_Txt[MAXLEN_PATH];
   char Nu_Pk_Txt[MAXLEN_PATH];
+
+  /*other parameters may be used in the module neutrino*/
+  double H0;
+  double Rhocr; /*critical density at z=0*/
+  double Omega_Nu0_Expansion;
+  double Omega_Nu0_Frstr;
+  double Unittrans;
+  double Mass_2;
+  double Mass_3;
+  double Xi_1;
+  double Xi_2;
+  int Time_Of_Step;
+  double A_Last_PM_Step;
+  double NumDensity0;
+  double NumDensity1;
+  double NumDensity2;
+  double NumDensity3;
+
+#ifdef STERILE
+  double Mass_4;
+  double Xi_4;
+  double NumDensity4;
+#endif  // STERILE
+
 #endif
 
 

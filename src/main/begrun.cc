@@ -217,6 +217,11 @@ void sim::begrun1(const char *parameterFile)
   CoolSfr.init_clouds();
 #endif
 
+#ifdef NEUTRINO
+  NuSfr.InitNu();
+#endif  // NEUTRINO
+
+
 #if((!defined(PMGRID) || (defined(PMGRID) && defined(TREEPM_NOTIMESPLIT))) && defined(SELFGRAVITY) && defined(PERIODIC)) || \
     defined(FORCETEST)
   Ewald.ewald_init();

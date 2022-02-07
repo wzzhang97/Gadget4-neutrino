@@ -1,14 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\examples",
-    "\\examples\\CollidingGalaxiesSFR",
-    "\\examples\\G2-cluster",
-    "\\examples\\G2-galaxy",
-    "\\examples\\SantaBarbara-PSPH-64",
     "\\src",
-    "\\src\\data"
+    "\\src\\gravity"
   ],
-  "SelectedNode": "\\src\\data\\allvars.cc",
+  "SelectedNode": "\\src\\gravity\\ewald_test.cc",
   "PreviewInSolutionExplorer": false
 }
